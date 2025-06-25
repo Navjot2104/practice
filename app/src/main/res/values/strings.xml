@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">practice</string>
+    <string name="new_name">New String</string>
+    <string-array name="colors_list">
+        <item name="first">red</item>
+        <item name="second">blue</item>
+        <item name="third">yellow</item>
+    </string-array>
 </resources>
