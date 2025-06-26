@@ -14,7 +14,8 @@ import com.example.practice.databinding.ActivitySpinnerpracBinding
 
 class spinnerprac : AppCompatActivity() {
     lateinit var binding: ActivitySpinnerpracBinding
-    var spinnerValues= mutableListOf("first","secomd")
+    var spinnerValues= mutableListOf("colors_list")
+    var values = mutableListOf("gender")
     lateinit var arrayAdapter:ArrayAdapter<String>
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,8 +41,24 @@ class spinnerprac : AppCompatActivity() {
             }
 
             override fun onNothingSelected(parent: AdapterView<*>?) {
-                TODO("Not yet implemented")
+
             }
+        }
+
+        binding.spstatc.onItemSelectedListener=object : AdapterView.OnItemSelectedListener{
+            override fun onItemSelected(
+                parent: AdapterView<*>?,
+                view: View?,
+                position: Int,
+                id: Long
+            ) {
+                var selectedItem=binding.spstatc.selectedItem as String
+                Toast.makeText(this@spinnerprac, "$selectedItem", Toast.LENGTH_SHORT).show()
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+            }
+
         }
     }
 }
