@@ -6,4 +6,9 @@
         <item name="second">blue</item>
         <item name="third">yellow</item>
     </string-array>
+    <string-array name="gender">
+        <item name="male">male</item>
+        <item name="female">female</item>
+        <item name="other">other</item>
+    </string-array>
 </resources>
