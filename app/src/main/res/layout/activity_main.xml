@@ -182,13 +182,13 @@ android:orientation="vertical">
         android:gravity="center"
         android:layout_marginTop="10dp">
         <Button
+            android:id="@+id/bnn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Submit"
             android:textSize="20dp"
             android:layout_margin="30dp"
-
-            android:layout_weight="7"/>
+            />
 
 
         <Button
