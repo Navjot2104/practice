@@ -31,7 +31,7 @@ class edittetfetchapp : AppCompatActivity() {
 
             }
             else{
-                Toast.makeText(this,binding.edtxt2.text.toString(),Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,binding.edtxt.text.toString(),Toast.LENGTH_SHORT).show()
             }
             if (binding.edtxt2.text.toString().isNullOrEmpty()){
                 binding.edtxt2.error="Enter Phone number"
